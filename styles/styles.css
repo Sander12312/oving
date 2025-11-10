@@ -1,0 +1,112 @@
+body{
+    background-image: url(/photos/allef-vinicius-IvQeAVeJULw-unsplash.jpg);
+    background-repeat:no-repeat;
+    background-size: 100%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(153, 159, 167, 0);
+    margin-top: -11vw;
+    position: fixed;
+    margin-bottom: 5vw;
+}
+.main-nav {
+    margin-left: 28vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: white;
+}
+a{
+       color: white;
+       text-decoration: none;
+       margin: 1vw;
+       font-size: 1.2vw;
+}
+a:hover{
+    text-decoration: underline;
+}
+.main-header{
+    margin-left: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 5vw;
+}
+.hero{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.041);
+    border-radius: 20vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 3vw;
+    margin-top: 10vw;
+
+}
+.text-and-button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vw;
+    color: white;
+    margin-right: 10vw;
+}
+.aboutme{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    margin-top: -1vw;
+}
+.quote{
+    font-size: 2vw;
+    margin-top: 2vw;
+}
+.cta{
+    margin-top: 3vw;
+    font-size: 2vw;
+    background-color: rgb(136, 89, 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5vw;
+    padding: 1vw;
+}
+.barber{
+    width: 40vw;
+    height: 30vw;
+    margin: 10vw;
+    border-radius: 5vw;
+}
+body{
+    background-color: rgba(10, 8, 8, 0.966);
+}
+.kontakt{
+    margin-top: 5vw;
+    margin-left: 10vw;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vw;
+}
+.location{
+    width: 40vw;
+    height: 30vw;
+    margin-top: 7.5vw;
+    margin-left: 4.2vw;
+    border:none
+}
+.kontakt-heading{
+    color: white;
+}
+.pin{
+    width: 72.5vw;
+    height: 30vw;
+    margin-left: 10vw;
+    margin-top: 0vw;
+    border:none
+}
