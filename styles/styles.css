@@ -14,6 +14,9 @@ header{
     position: fixed;
     margin-bottom: 5vw;
 }
+label, #menu-checkbox, i{
+    display: none;
+}
 .main-nav {
     margin-left: 28vw;
     font-family: Arial, Helvetica, sans-serif;
@@ -127,7 +130,7 @@ body{
     padding: 1vw;
     margin-left: 1.7vw;
     border-radius: 2vw;
-        box-shadow: 0 0 7.5px 0.3px rgb(136, 89, 2); /* The glow effect */
+    box-shadow: 0 0 7.5px 0.3px rgb(136, 89, 2); /* The glow effect */
 }
 .cta-card{
     font-size: 1.2vw;
@@ -143,6 +146,47 @@ body{
     transform:rotate(3deg);
      box-shadow: 0 0 15px 1px rgb(136, 89, 2); /* The glow effect */
 }
+.produkter{
+    display: flex;
+    flex-direction: column;
+    font-size: 3vw;
+}
+.overskrift-produkter{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-produkter{
+    display: flex;
+    flex: row;
+    border-bottom: 1px solid white;
+    padding-bottom: 3vw;
+    text-overflow: none;
+    margin-right: 1.5vw;
+}
+.hårvoks, .shampoo, .barbers, .conditioner{
+    width: 25vw;
+    background-color: rgba(255, 255, 255, 0.048);
+    margin-left: 1.7vw;
+    border-radius: 2.5vw;
+}
+.hårvoks-bilde, .shampoo-bilde, .barbers-bilde, .conditioner-bilde{
+    width: 20vw;
+    height: 30vw;
+    margin-top: 1vw;
+    display: flex;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 2.5vw;
+}
+.overskrift-hårvoks, .overskrift-shampoo, .overskrift-Barbermaskin, .overskrift-balsam{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2.5vw;
+}
+
 .kontakt{
     margin-top: 5vw;
     margin-left: 10vw;
@@ -153,7 +197,7 @@ body{
 .information{
     display: flex;
     flex-direction: column;
-    margin-top: 10vw;
+    margin-top: 6.6vw;
 }
 .location{
     width: 40vw;
@@ -172,4 +216,80 @@ body{
     margin-top: 0vw;
     border:none;
     margin-top: 1vw;
+}
+@media (max-width:600px){
+    label, i{
+        display: flex;
+        color: white;
+    }
+    .main-nav a{
+        display: none;
+    }
+#menu-checkbox:checked ~ .main-nav a{
+    display: block;
+    margin-left: -25vw;
+    width: 10vw;
+    justify-content: center;
+}
+.main-nav{
+    margin-right: 5vw;
+    background-color: rgba(255, 255, 255, 0);
+}
+label {
+    margin-left: -60vw;
+}
+.main-header{
+    align-items: center;
+    justify-content: center;
+    margin-left: 35vw;
+    margin-bottom: 5vw;
+}
+.main-nav a{
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 2vw;
+    margin-top: 3vw;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+.card1, .card2, .card3, .card4{
+ background-color: rgba(255, 255, 255, 0.048);
+    height: 62.5vw;
+    width: 40vw;
+    margin-bottom: 10vw;
+    padding: 1vw;
+    margin-left: 25vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 7.5px 0.3px rgb(136, 89, 2); /* The glow effect */
+}
+.cards img{
+        width: 35vw;
+        height: 31vw;
+        margin-left: 2.5vw;
+        margin-top: 2.5vw;
+    border-radius: 2vw;
+}
+.card-description{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vw;
+}
+.vanlig-hårklipp, .skjegg-og-klipp, .fade, .totale-makeover{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 3vw;
+}
+.cta-card{
+    font-size: 2vw;
+    background-color: rgb(136, 89, 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5vw;
+    padding: 0.7vw;
+    margin-top: 2vw;
+}
+
 }
